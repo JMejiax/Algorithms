@@ -48,10 +48,10 @@ public class Main{
 		}		
 		
 		public static void Permutar(int l, int r){			
-			if(l == r){
-				solution.add(cadena);
-			}else{
-				for(int i = l; i<=r ; i++){
+				if(l == r){
+					solution.add(cadena);
+				}else{
+					for(int i = l; i<=r ; i++){
 						Swap(l, i);
 						Permutar(l+1, r);
 						Swap(l, i);			
@@ -80,9 +80,9 @@ public class Main{
       	}
 				
 				for(int i = 0; i<t; i++){
-      			System.out.println("Case " + (i+1) + ":");
+      		System.out.println("Case " + (i+1) + ":");
       		
-      			if(cases.get(i)[0] > 5){
+      		if(cases.get(i)[0] > 5){
       			l = Main.Digitos(cases.get(i)[1], 1);
       			Main.cadena = Main.abc.substring(cases.get(i)[0]-(l+1), cases.get(i)[0]);
       			Main.Permutar(0, Main.cadena.length()-1);
