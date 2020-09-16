@@ -61,4 +61,3 @@ for i in range(len(cases)):
 	
 
 
-# letras = ['A','B','C','D','E', 'F','G','H','I','J','K','L','M','N','O','P','Q','R','S','U','V','W','X','Y','Z']
