@@ -29,8 +29,8 @@ public class Main{
 			if(memo[n] > 0)
 				return memo[n];
 			else
-			 memo[n] = n*Factorial(n-1);
-			return n*Factorial(n-1);
+			memo[n] = n*Factorial(n-1);
+			return memo[n];
 		}
 		
 		public static int Digitos(int k, int n){
