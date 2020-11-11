@@ -29,7 +29,7 @@ class Graph:
 		for node in self.adj_list:
 			print(node, "->", self.adj_list[node])
 	
-	# Recursive function to visit all nodes
+	# Recursive function to visit all nodes using depth first search algo
 	def dfs(self, at):
 		if self.visited[at]:
 			return 
@@ -42,8 +42,8 @@ class Graph:
 # all_edges = [("A", "B"),("A", "C"),("B", "D"),("C", "D"),("C", "E"),("D", "E")]
 # nodes = ["A", "B", "C", "D", "E"]
 
-all_edges = [(0, 1),(0, 2),(1, 3),(2, 3),(2, 4),(3, 4)]
-nodes = [0, 1, 2, 3, 4]
+all_edges = [(1, 2),(1, 3),(3, 4)]
+nodes = [1, 2, 3, 4, 5]
 graph = Graph(nodes)
 # graph.print_adj_list()
 
@@ -52,6 +52,6 @@ for u, v in all_edges:
 
 #graph.print_adj_list()
 
-graph.dfs(4)
-
-
+# graph.dfs(4)
+r = graph.bfs(1, 3)
+print(r)
